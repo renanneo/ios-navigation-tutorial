@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LetraBViewController.h"
 
 @interface LetraAViewController : UIViewController
-
+{
+    NSDictionary * letras;
+}
+@property NSString *letra;
+@property NSArray *keys;
 @end

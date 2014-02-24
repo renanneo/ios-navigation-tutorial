@@ -16,12 +16,14 @@ static int contador = 0 ;
 -(void) viewDidLoad {
     
     //NSArray * currentControllers = self.navigationController.viewControllers ;
-    letras = [[NSDictionary alloc]initWithObjectsAndKeys:@"Alce",@"A",@"Baleia",@"B",@"Camelo",@"C",@"Dragão",@"D",@"Esquilo",@"E",@"Foca",@"F",@"Gorila",@"G",@"Hipopótamo",@"H",@"Iguana",@"I",@"Jacaré",@"J",@"Kiwi",@"K",@"Lhama",@"L",@"Macaco",@"M",@"Naja",@"N",@"Ovelha",@"O",@"Porco",@"P",@"Quati",@"Q",@"Rapoza",@"R",@"Sapo",@"S",@"Tatu",@"T",@"Urso",@"U",@"Vaca",@"V",@"Ximango",@"X",@"Zebra",@"Z",nil];
+    letras = [[NSDictionary alloc]initWithObjectsAndKeys:@"Alce",@"A",@"Baleia",@"B",@"Canguru",@"C",@"Dragão",@"D",@"Esquilo",@"E",@"Foca",@"F",@"Girafa",@"G",@"Hipopótamo",@"H",@"Iguana",@"I",@"Jacaré",@"J",@"Kiwi",@"K",@"Leopardo",@"L",@"Macaco",@"M",@"Naja",@"N",@"Ovelha",@"O",@"Porco",@"P",@"Quati",@"Q",@"Rapoza",@"R",@"Sapo",@"S",@"Tatu",@"T",@"Urso",@"U",@"Vaca",@"V",@"Ximango",@"X",@"Zebra",@"Z",nil];
     
-    a = [[NSArray alloc]initWithObjects:@"alce.png", nil];
+    a = [[NSArray alloc]initWithObjects:@"alce.png",@"baleia.gif",@"canguru.png",@"dragao.png",@"esquilo.png",@"foca.png",@"girafa.jpg",@"hipopotamo.png",@"nada",@"jacare.jpg",@"kiwi.png",@"leopardo.png",@"macaco.png",@"cobra.png",@"ovelha.png",@"pig.png",@"nada",@"raposa.jpg",@"sapo.png",@"tatu.png",@"urso.png",@"vaca.png",@"",@"zebra.png", nil];
     
+    UIImage * image = [UIImage imageNamed:[a objectAtIndex:contador]];
     
-    UIImageView *someImageView = [[UIImageView alloc] initWithImage:[a objectAtIndex:contador]];
+    UIImageView *someImageView = [[UIImageView alloc] initWithImage:image];
+    someImageView.center = self.view.center;
     [self.view addSubview:someImageView];
     [super viewDidLoad];
 
@@ -35,12 +37,12 @@ static int contador = 0 ;
     self.navigationItem.rightBarButtonItem=next;
     
     
-    UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
-    [botao setTitle:[letras objectForKey:[keys objectAtIndex:contador]] forState:UIControlStateNormal];
-    [botao sizeToFit];
-    botao.center = self.view.center;
-    
-    [self.view addSubview:botao];
+//    UIButton *botao = [UIButton buttonWithType:UIButtonTypeSystem];
+//    [botao setTitle:[letras objectForKey:[keys objectAtIndex:contador]] forState:UIControlStateNormal];
+//    [botao sizeToFit];
+//     = self.view.;
+//    
+//    [self.view addSubview:botao];
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
                                    initWithBarButtonSystemItem:UIBarButtonSystemItemReply target:self action:@selector(back:)];

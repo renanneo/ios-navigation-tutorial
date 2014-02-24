@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "LetraBViewController.h"
+#import "MackenzieAppDelegate.h"
 
 @interface LetraAViewController : UIViewController
 {
     NSDictionary * letras;
+    NSArray * a;
+    
+
 }
-@property NSString *letra;
 @property NSArray *keys;
+
 @end

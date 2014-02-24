@@ -8,6 +8,7 @@
 
 #import "MackenzieAppDelegate.h"
 #import "LetraAViewController.h"
+#import "LetraAViewController.h"
 
 @implementation MackenzieAppDelegate
 
@@ -30,6 +31,8 @@
     [self.window makeKeyAndVisible];
     
     return YES;
+    
+
 }
 
 

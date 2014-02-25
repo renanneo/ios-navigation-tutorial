@@ -13,9 +13,8 @@
 {
     NSDictionary * letras;
     NSArray * a;
-    
-
 }
+
 @property NSArray *keys;
 
 @end

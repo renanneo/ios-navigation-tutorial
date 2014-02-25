@@ -62,6 +62,30 @@ static int contador = 0 ;
     [mySecondLabel setFont:[UIFont fontWithName:@"Arial" size:20]];
     [[self view] addSubview:mySecondLabel];
 
+    UILabel *letra1 = [[UILabel alloc]initWithFrame:CGRectMake(150, 400, 200, 40)];
+    [letra1 setBackgroundColor:[UIColor clearColor]];
+    [letra1 setText:[[letras objectForKey:[keys objectAtIndex:contador]] substringToIndex:1]];
+    [letra1 setFont:[UIFont fontWithName:@"Arial" size:20]];
+    [[self view] addSubview:letra1];
+  
+    UILabel *letra2 = [[UILabel alloc]initWithFrame:CGRectMake(200, 400, 200, 40)];
+    [letra2 setBackgroundColor:[UIColor clearColor]];
+    [letra2 setText:[[letras objectForKey:[keys objectAtIndex:contador]] substringToIndex:2]];
+    [letra2 setFont:[UIFont fontWithName:@"Arial" size:20]];
+    [[self view] addSubview:letra2];
+    
+    UILabel *letra3 = [[UILabel alloc]initWithFrame:CGRectMake(150, 150, 200, 40)];
+    [letra3 setBackgroundColor:[UIColor clearColor]];
+    [letra3 setText:[letras objectForKey:[keys objectAtIndex:contador]]];
+    [letra3 setFont:[UIFont fontWithName:@"Arial" size:20]];
+    [[self view] addSubview:mySecondLabel];
+    
+    UILabel *letra4 = [[UILabel alloc]initWithFrame:CGRectMake(150, 150, 200, 40)];
+    [letra4 setBackgroundColor:[UIColor clearColor]];
+    [letra4 setText:[letras objectForKey:[keys objectAtIndex:contador]]];
+    [letra4 setFont:[UIFont fontWithName:@"Arial" size:20]];
+    [[self view] addSubview:mySecondLabel];
+    
     
     //back button
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
@@ -94,7 +118,7 @@ static int contador = 0 ;
 }
 
 -(void)ler:(id)sender {
-    
+
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:[letras objectForKey:[keys objectAtIndex:contador]]];
      utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
     utterance.rate = 0.001;

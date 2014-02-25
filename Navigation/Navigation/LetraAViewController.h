@@ -15,6 +15,8 @@
     NSDictionary * letras;
     NSArray * a;
     NSString *lingua;
+    UIButton * botao;
+    UILabel *mySecondLabel;
 }
 
 @property NSArray *keys;

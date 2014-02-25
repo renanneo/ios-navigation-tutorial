@@ -9,16 +9,20 @@
 #import "LetraAViewController.h"
 
 @implementation LetraAViewController
-static int contador = 0 ;
+static int contador = 0;
+
 @synthesize keys;
 
 -(void) viewDidLoad {
+    
     
     [super viewDidLoad];
     
     //dictionary contendo os animais
     letras = [[NSDictionary alloc]initWithObjectsAndKeys:@"Alce",@"A",@"Baleia",@"B",@"Canguru",@"C",@"Dragão",@"D",@"Esquilo",@"E",@"Foca",@"F",@"Girafa",@"G",@"Hipopótamo",@"H",@"Iguana",@"I",@"Jacaré",@"J",@"Kiwi",@"K",@"Leopardo",@"L",@"Macaco",@"M",@"Naja",@"N",@"Ovelha",@"O",@"Porco",@"P",@"Quati",@"Q",@"Rapoza",@"R",@"Sapo",@"S",@"Tatu",@"T",@"Urso",@"U",@"Vaca",@"V",@"Ximango",@"X",@"Zebra",@"Z",nil];
     
+    ingles = [[NSArray alloc]initWithObjects:@"elk",@"whale",@"kangaroo",@"dragon",@"squirrel",@"seal",@"giraffe",@"hipopotamus",@"iguana",@"aligator",@"kiwi",@"leopard",@"monkey",@"naja",@"sheep",@"pig",@"nada",@"fox",@"frog",@"armadillo",@"bear",@"cow",@"",@"zebra", nil];
+
     //array de imagens
     a = [[NSArray alloc]initWithObjects:@"alce.png",@"baleia.gif",@"canguru.png",@"dragao.png",@"esquilo.png",@"foca.png",@"girafa.jpg",@"hipopotamo.png",@"iguana.jpg",@"jacare.jpg",@"kiwi.png",@"leopardo.png",@"macaco.png",@"cobra.png",@"ovelha.png",@"pig.png",@"nada",@"raposa.jpg",@"sapo.png",@"tatu.png",@"urso.png",@"vaca.png",@"",@"zebra.png", nil];
     
@@ -61,40 +65,64 @@ static int contador = 0 ;
     [mySecondLabel setText:[letras objectForKey:[keys objectAtIndex:contador]]];
     [mySecondLabel setFont:[UIFont fontWithName:@"Arial" size:20]];
     [[self view] addSubview:mySecondLabel];
-
-    UILabel *letra1 = [[UILabel alloc]initWithFrame:CGRectMake(150, 400, 200, 40)];
-    [letra1 setBackgroundColor:[UIColor clearColor]];
-    [letra1 setText:[[letras objectForKey:[keys objectAtIndex:contador]] substringToIndex:1]];
-    [letra1 setFont:[UIFont fontWithName:@"Arial" size:20]];
-    [[self view] addSubview:letra1];
-  
-    UILabel *letra2 = [[UILabel alloc]initWithFrame:CGRectMake(200, 400, 200, 40)];
-    [letra2 setBackgroundColor:[UIColor clearColor]];
-    [letra2 setText:[[letras objectForKey:[keys objectAtIndex:contador]] substringToIndex:2]];
-    [letra2 setFont:[UIFont fontWithName:@"Arial" size:20]];
-    [[self view] addSubview:letra2];
-    
-    UILabel *letra3 = [[UILabel alloc]initWithFrame:CGRectMake(150, 150, 200, 40)];
-    [letra3 setBackgroundColor:[UIColor clearColor]];
-    [letra3 setText:[letras objectForKey:[keys objectAtIndex:contador]]];
-    [letra3 setFont:[UIFont fontWithName:@"Arial" size:20]];
-    [[self view] addSubview:mySecondLabel];
-    
-    UILabel *letra4 = [[UILabel alloc]initWithFrame:CGRectMake(150, 150, 200, 40)];
-    [letra4 setBackgroundColor:[UIColor clearColor]];
-    [letra4 setText:[letras objectForKey:[keys objectAtIndex:contador]]];
-    [letra4 setFont:[UIFont fontWithName:@"Arial" size:20]];
-    [[self view] addSubview:mySecondLabel];
+//
+//    UILabel *letra1 = [[UILabel alloc]initWithFrame:CGRectMake(150, 400, 200, 40)];
+//    [letra1 setBackgroundColor:[UIColor clearColor]];
+//    [letra1 setText:[[letras objectForKey:[keys objectAtIndex:contador]] substringToIndex:1]];
+//    [letra1 setFont:[UIFont fontWithName:@"Arial" size:20]];
+//    [[self view] addSubview:letra1];
+//  
+//    UILabel *letra2 = [[UILabel alloc]initWithFrame:CGRectMake(200, 400, 200, 40)];
+//    [letra2 setBackgroundColor:[UIColor clearColor]];
+//    [letra2 setText:[[letras objectForKey:[keys objectAtIndex:contador]] substringToIndex:2]];
+//    [letra2 setFont:[UIFont fontWithName:@"Arial" size:20]];
+//    [[self view] addSubview:letra2];
+//    
+//    UILabel *letra3 = [[UILabel alloc]initWithFrame:CGRectMake(150, 150, 200, 40)];
+//    [letra3 setBackgroundColor:[UIColor clearColor]];
+//    [letra3 setText:[letras objectForKey:[keys objectAtIndex:contador]]];
+//    [letra3 setFont:[UIFont fontWithName:@"Arial" size:20]];
+//    [[self view] addSubview:mySecondLabel];
+//    
+//    UILabel *letra4 = [[UILabel alloc]initWithFrame:CGRectMake(150, 150, 200, 40)];
+//    [letra4 setBackgroundColor:[UIColor clearColor]];
+//    [letra4 setText:[letras objectForKey:[keys objectAtIndex:contador]]];
+//    [letra4 setFont:[UIFont fontWithName:@"Arial" size:20]];
+//    [[self view] addSubview:mySecondLabel];
     
     
     //back button
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
                                    initWithBarButtonSystemItem:UIBarButtonSystemItemReply target:self action:@selector(back:)];
 
-        self.navigationItem.leftBarButtonItem = backButton;
+    self.navigationItem.leftBarButtonItem = backButton;
+
+
+
+    UIButton * botao = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    botao.frame = CGRectMake(110.0, 400.0, 200.0, 30.0);
+    [botao setTitle:@"Escolha linguagem" forState:UIControlStateNormal];
+    botao.backgroundColor = [UIColor clearColor];
+    [botao addTarget:self action:@selector(trocaLInguagem:) forControlEvents:UIControlEventTouchUpInside];
+    
+   
+    [self.view addSubview:botao];
 }
 
 
+
+-(void)trocaLInguagem:(id)sender {
+    
+    if ([lingua isEqualToString:@"pt-BR"])
+        lingua = @"en-US";
+    
+    else
+        lingua = @"pt-BR";
+
+    
+    
+    
+}
 
 -(void)next:(id)sender {
     
@@ -118,12 +146,23 @@ static int contador = 0 ;
 }
 
 -(void)ler:(id)sender {
+    
+    
+    if ([lingua isEqualToString:@"pt-BR"]) {
+         AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:[letras objectForKey:[keys objectAtIndex:contador]]];
+        utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
+        utterance.rate = 0.001;
+        AVSpeechSynthesizer *syn = [[AVSpeechSynthesizer alloc] init];
+        [syn speakUtterance:utterance];
 
-    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:[letras objectForKey:[keys objectAtIndex:contador]]];
-     utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"pt-BR"];
+    }
+    else {
+       AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:[ingles objectAtIndex:contador]];
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-US"];
     utterance.rate = 0.001;
     AVSpeechSynthesizer *syn = [[AVSpeechSynthesizer alloc] init];
     [syn speakUtterance:utterance];
+    }
     
 }
 

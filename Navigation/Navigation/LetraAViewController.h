@@ -11,10 +11,13 @@
 #import <AVFoundation/AVFoundation.h>
 @interface LetraAViewController : UIViewController<UIGestureRecognizerDelegate>
 {
+    NSArray *ingles ;
     NSDictionary * letras;
     NSArray * a;
+    NSString *lingua;
 }
 
 @property NSArray *keys;
+
 
 @end

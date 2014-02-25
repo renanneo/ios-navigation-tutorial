@@ -30,6 +30,9 @@
 		1E1A2B7318BBDC2700E99BFF /* kiwi.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E1A2B5E18BBDC2700E99BFF /* kiwi.png */; };
 		1E1A2B7418BBDC2700E99BFF /* foca.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E1A2B5F18BBDC2700E99BFF /* foca.png */; };
 		1E1A2B7618BBDDC900E99BFF /* girafa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E1A2B7518BBDDC900E99BFF /* girafa.jpg */; };
+		1E1A2B7818BCB44300E99BFF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1A2B7718BCB44300E99BFF /* AVFoundation.framework */; };
+		1E1A2B7A18BCB97B00E99BFF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1A2B7918BCB97B00E99BFF /* AudioToolbox.framework */; };
+		1E1A2B7C18BCC33600E99BFF /* iguana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E1A2B7B18BCC33600E99BFF /* iguana.jpg */; };
 		27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4C18B76AF50053A99C /* Foundation.framework */; };
 		27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4E18B76AF50053A99C /* CoreGraphics.framework */; };
 		27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
@@ -43,7 +46,6 @@
 		27156F7018B76AF50053A99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27156F6E18B76AF50053A99C /* InfoPlist.strings */; };
 		27156F7218B76AF50053A99C /* NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7118B76AF50053A99C /* NavigationTests.m */; };
 		27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7C18BA89430053A99C /* LetraAViewController.m */; };
-		27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27156F7F18BA8B210053A99C /* LetraBViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,9 @@
 		1E1A2B5E18BBDC2700E99BFF /* kiwi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiwi.png; sourceTree = "<group>"; };
 		1E1A2B5F18BBDC2700E99BFF /* foca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foca.png; sourceTree = "<group>"; };
 		1E1A2B7518BBDDC900E99BFF /* girafa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girafa.jpg; sourceTree = "<group>"; };
+		1E1A2B7718BCB44300E99BFF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1E1A2B7918BCB97B00E99BFF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1E1A2B7B18BCC33600E99BFF /* iguana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iguana.jpg; sourceTree = "<group>"; };
 		27156F4918B76AF50053A99C /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27156F4C18B76AF50053A99C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27156F4E18B76AF50053A99C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,8 +103,6 @@
 		27156F7118B76AF50053A99C /* NavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTests.m; sourceTree = "<group>"; };
 		27156F7B18BA89430053A99C /* LetraAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraAViewController.h; sourceTree = "<group>"; };
 		27156F7C18BA89430053A99C /* LetraAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraAViewController.m; sourceTree = "<group>"; };
-		27156F7E18BA8B210053A99C /* LetraBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetraBViewController.h; sourceTree = "<group>"; };
-		27156F7F18BA8B210053A99C /* LetraBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetraBViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E1A2B7A18BCB97B00E99BFF /* AudioToolbox.framework in Frameworks */,
+				1E1A2B7818BCB44300E99BFF /* AVFoundation.framework in Frameworks */,
 				27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */,
 				27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */,
 				27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */,
@@ -129,6 +134,7 @@
 		1E1A2B4A18BBDC2700E99BFF /* lallal */ = {
 			isa = PBXGroup;
 			children = (
+				1E1A2B7B18BCC33600E99BFF /* iguana.jpg */,
 				1E1A2B4818BBD23E00E99BFF /* alce.png */,
 				1E1A2B4B18BBDC2700E99BFF /* jacare.jpg */,
 				1E1A2B4C18BBDC2700E99BFF /* cobra.png */,
@@ -178,6 +184,8 @@
 		27156F4B18B76AF50053A99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E1A2B7918BCB97B00E99BFF /* AudioToolbox.framework */,
+				1E1A2B7718BCB44300E99BFF /* AVFoundation.framework */,
 				27156F4C18B76AF50053A99C /* Foundation.framework */,
 				27156F4E18B76AF50053A99C /* CoreGraphics.framework */,
 				27156F5018B76AF50053A99C /* UIKit.framework */,
@@ -195,8 +203,6 @@
 				27156F5318B76AF50053A99C /* Supporting Files */,
 				27156F7B18BA89430053A99C /* LetraAViewController.h */,
 				27156F7C18BA89430053A99C /* LetraAViewController.m */,
-				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
-				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
 				1E1A2B4A18BBDC2700E99BFF /* lallal */,
 			);
 			path = Navigation;
@@ -330,6 +336,7 @@
 				1E1A2B6A18BBDC2700E99BFF /* ovelha.png in Resources */,
 				1E1A2B7618BBDDC900E99BFF /* girafa.jpg in Resources */,
 				1E1A2B6018BBDC2700E99BFF /* jacare.jpg in Resources */,
+				1E1A2B7C18BCC33600E99BFF /* iguana.jpg in Resources */,
 				1E1A2B6F18BBDC2700E99BFF /* raposa.jpg in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
 			);
@@ -352,7 +359,6 @@
 			files = (
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
 				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
-				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

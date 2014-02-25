@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LetraBViewController.h"
 #import "MackenzieAppDelegate.h"
-
-@interface LetraAViewController : UIViewController
+#import <AVFoundation/AVFoundation.h>
+@interface LetraAViewController : UIViewController<UIGestureRecognizerDelegate>
 {
     NSDictionary * letras;
     NSArray * a;

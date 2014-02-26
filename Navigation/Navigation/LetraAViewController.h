@@ -17,6 +17,10 @@
     NSString *lingua;
     UIButton * botao;
     UILabel *mySecondLabel;
+    UILabel *letra1;
+   NSString *final_string;
+    NSString *final_string2;
+    UIImageView *flagImageView;
 }
 
 @property NSArray *keys;

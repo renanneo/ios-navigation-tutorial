@@ -33,6 +33,10 @@
 		1E1A2B7818BCB44300E99BFF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1A2B7718BCB44300E99BFF /* AVFoundation.framework */; };
 		1E1A2B7A18BCB97B00E99BFF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1A2B7918BCB97B00E99BFF /* AudioToolbox.framework */; };
 		1E1A2B7C18BCC33600E99BFF /* iguana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E1A2B7B18BCC33600E99BFF /* iguana.jpg */; };
+		1E984C9818BE32290007E812 /* eagle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1E984C9718BE32290007E812 /* eagle.jpg */; };
+		1EDA9B0018BE2A110096BB9B /* brasil.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EDA9AFF18BE2A110096BB9B /* brasil.png */; };
+		1EDA9B0218BE2CE40096BB9B /* usa.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EDA9B0118BE2CE40096BB9B /* usa.png */; };
+		1EDA9B0418BE2FEF0096BB9B /* coati.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EDA9B0318BE2FEF0096BB9B /* coati.png */; };
 		27156F4D18B76AF50053A99C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4C18B76AF50053A99C /* Foundation.framework */; };
 		27156F4F18B76AF50053A99C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F4E18B76AF50053A99C /* CoreGraphics.framework */; };
 		27156F5118B76AF50053A99C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27156F5018B76AF50053A99C /* UIKit.framework */; };
@@ -85,6 +89,10 @@
 		1E1A2B7718BCB44300E99BFF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1E1A2B7918BCB97B00E99BFF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1E1A2B7B18BCC33600E99BFF /* iguana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iguana.jpg; sourceTree = "<group>"; };
+		1E984C9718BE32290007E812 /* eagle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eagle.jpg; sourceTree = "<group>"; };
+		1EDA9AFF18BE2A110096BB9B /* brasil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brasil.png; sourceTree = "<group>"; };
+		1EDA9B0118BE2CE40096BB9B /* usa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usa.png; sourceTree = "<group>"; };
+		1EDA9B0318BE2FEF0096BB9B /* coati.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coati.png; sourceTree = "<group>"; };
 		27156F4918B76AF50053A99C /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27156F4C18B76AF50053A99C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27156F4E18B76AF50053A99C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,9 +142,13 @@
 		1E1A2B4A18BBDC2700E99BFF /* lallal */ = {
 			isa = PBXGroup;
 			children = (
+				1EDA9AFF18BE2A110096BB9B /* brasil.png */,
 				1E1A2B7B18BCC33600E99BFF /* iguana.jpg */,
+				1EDA9B0118BE2CE40096BB9B /* usa.png */,
+				1E984C9718BE32290007E812 /* eagle.jpg */,
 				1E1A2B4818BBD23E00E99BFF /* alce.png */,
 				1E1A2B4B18BBDC2700E99BFF /* jacare.jpg */,
+				1EDA9B0318BE2FEF0096BB9B /* coati.png */,
 				1E1A2B4C18BBDC2700E99BFF /* cobra.png */,
 				1E1A2B4D18BBDC2700E99BFF /* baleia.gif */,
 				1E1A2B4E18BBDC2700E99BFF /* tatu.png */,
@@ -327,15 +339,19 @@
 				1E1A2B7118BBDC2700E99BFF /* sapo.png in Resources */,
 				1E1A2B6618BBDC2700E99BFF /* esquilo.png in Resources */,
 				1E1A2B6518BBDC2700E99BFF /* canguru.png in Resources */,
+				1E984C9818BE32290007E812 /* eagle.jpg in Resources */,
 				1E1A2B6718BBDC2700E99BFF /* hipopotamo.png in Resources */,
 				1E1A2B6418BBDC2700E99BFF /* alce.png in Resources */,
+				1EDA9B0418BE2FEF0096BB9B /* coati.png in Resources */,
 				1E1A2B7018BBDC2700E99BFF /* pig.png in Resources */,
 				1E1A2B6218BBDC2700E99BFF /* baleia.gif in Resources */,
 				1E1A2B6E18BBDC2700E99BFF /* dragao.png in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
+				1EDA9B0218BE2CE40096BB9B /* usa.png in Resources */,
 				1E1A2B6A18BBDC2700E99BFF /* ovelha.png in Resources */,
 				1E1A2B7618BBDDC900E99BFF /* girafa.jpg in Resources */,
 				1E1A2B6018BBDC2700E99BFF /* jacare.jpg in Resources */,
+				1EDA9B0018BE2A110096BB9B /* brasil.png in Resources */,
 				1E1A2B7C18BCC33600E99BFF /* iguana.jpg in Resources */,
 				1E1A2B6F18BBDC2700E99BFF /* raposa.jpg in Resources */,
 				27156F5F18B76AF50053A99C /* Images.xcassets in Resources */,
